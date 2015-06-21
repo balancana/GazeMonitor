@@ -1,0 +1,38 @@
+﻿<Window x:Class="GazeMonitor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Gaze Trainer" Height="365" Width="276" ResizeMode="NoResize"
+        ContentRendered="Window_ContentRendered"
+        Closing="Window_Closing"
+        >
+    <DockPanel>
+        <Menu DockPanel.Dock="Top" Height="26">
+            <MenuItem Header="Calibration">
+                <MenuItem Header="New" Click="New_Calibration" />
+                <MenuItem Header="Load..." Click="Open_Calibration"/>
+                <MenuItem Header="Save As..." Click="Save_Calibration"/>
+                <Separator/>
+                <MenuItem Header="Calibration Plot..." Click="CalibrationPlot"/>
+                <Separator/>
+                <MenuItem Header="Exit" Click="Exit"/>
+            </MenuItem>
+            <MenuItem Header="Tools">
+                <MenuItem Header="Accuracy Test" Click="AccuracyTest"/>
+                <MenuItem Header="Tracbox Viewer" Click="TracboxViewer"/>
+            </MenuItem>
+        </Menu>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="151*"/>
+                <RowDefinition Height="92*"/>
+            </Grid.RowDefinitions>
+            <Button Name="Start_Button" Content="Start" HorizontalAlignment="Left" Margin="34,47,0,0" VerticalAlignment="Top" Width="87" Height="26" RenderTransformOrigin="0.517,1.615" Click="Start_Button_Click" Grid.Row="1" />
+            <GroupBox  Header="Angle at Distance" HorizontalAlignment="Left" Margin="34,22,0,0" VerticalAlignment="Top" Height="75"  Width="194">
+                <Label x:Name="angleAtDistance" FontSize="32" FontWeight="Bold" Content="" HorizontalAlignment="Center" VerticalAlignment="Center"  HorizontalContentAlignment="Center"  />
+            </GroupBox>
+            <GroupBox  Header="Angle at Screen" HorizontalAlignment="Left" Margin="34,116,0,0" VerticalAlignment="Top" Height="75"  Width="194" Grid.RowSpan="2">
+                <Label x:Name="angleAtScreen" FontSize="32" FontWeight="Bold" Content="" HorizontalAlignment="Center" VerticalAlignment="Center"  HorizontalContentAlignment="Center"  />
+            </GroupBox>
+        </Grid>
+    </DockPanel>
+</Window>
