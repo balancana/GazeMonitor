@@ -2,7 +2,9 @@
 
 GazeMonitor is a experimental tool which enables real-time measurement of deviation angles in strabismus using Tobii eye trackers. 
 
-![Screenshot image missing!](/screenshot.png?raw=true "GazeMonitor Main Window")
+# Screenshot #
+
+![screenshot.png](/screenshot.png?raw=true "GazeMonitor Main Window")
 
 ### Supported eye trackers ###
 
