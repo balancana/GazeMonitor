@@ -48,4 +48,4 @@ Submit an issue if you have any problems.
 
 This software is licensed under GNU GPLv3. 
 
-Please note that this software relies on proprietary GazeSDK library. Check [Tobbi's website](http://developer.tobii.com/) for more details. 
+Please note that this software relies on proprietary GazeSDK library. Check [Tobii's website](http://developer.tobii.com/) for more details. 
