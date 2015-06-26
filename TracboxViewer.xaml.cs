@@ -47,7 +47,10 @@ namespace GazeMonitor
 
         private void Window_KeyDown(object sender, KeyEventArgs e)
         {
-            Close();
+            if (e.Key == Key.Escape)
+            {
+                this.Close();
+            }
         }
 
         internal void Start()

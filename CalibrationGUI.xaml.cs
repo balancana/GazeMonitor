@@ -57,9 +57,12 @@ namespace GazeMonitor
 
         private void Window_KeyDown(object sender, KeyEventArgs e)
         {
-            this.Close();
-            if (CalibrationCanceled != null)
-                CalibrationCanceled(this, e);
+            if (e.Key == Key.Escape)
+            {
+                this.Close();
+                if (CalibrationCanceled != null)
+                    CalibrationCanceled(this, e);
+            }
         }
 
         private void Target_Shrinked(object sender, EventArgs e)
