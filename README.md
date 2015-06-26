@@ -40,7 +40,7 @@ This is experimental software. It shouldn't be used in medical diagnosis or trea
 
 ### User guide ###
 
-Please check the wiki for instructions before using this software.
+Please check the [User Guide](https://github.com/balancana/GazeMonitor/wiki/User-Guide "User Guide") for instructions before using this software.
 
 ### Troubleshooting ###
 
